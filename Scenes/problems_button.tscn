@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dhxnsw1bfss7o"]
+
+[ext_resource type="Theme" uid="uid://vm1vygkyrv53" path="res://Assets/button_theme.tres" id="1_qfolc"]
+
+[node name="Button" type="Button"]
+size_flags_horizontal = 3
+theme = ExtResource("1_qfolc")
+text = "A"

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cft3esec33g1h"]
+
+[ext_resource type="Texture2D" uid="uid://oahgtu4lxptp" path="res://kenney_ui-pack/PNG/dropdownTop.png" id="1_iwl8g"]
+
+[node name="DropdownTop" type="Sprite2D"]
+texture = ExtResource("1_iwl8g")

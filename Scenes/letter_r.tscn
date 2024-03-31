@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://hs1kvmyflv2y"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0raeg"]
+load_path = "res://.godot/imported/problem_letter52.png-c0d698b96ec00465ada203b2213fd924.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_csb3v"]
+load_path = "res://.godot/imported/problem_letter53.png-ac9f17dffd8bd291620921cffe88835d.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3hwx1"]
+load_path = "res://.godot/imported/problem_letter54.png-d41af253e0d06b24ee823c58f9f6ca96.ctex"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yjf4n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_0raeg")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_csb3v")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_3hwx1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="LetterR" type="AnimatedSprite2D" groups=["updateUI"]]
+sprite_frames = SubResource("SpriteFrames_yjf4n")

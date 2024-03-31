@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dsmvnycjlifwv"]
+
+[ext_resource type="FontFile" uid="uid://cl73sgrs3jrm7" path="res://kenney_ui-pack/Font/kenvector_future_thin.ttf" id="1_joc0e"]
+
+[node name="RichTextLabel" type="RichTextLabel"]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("1_joc0e")

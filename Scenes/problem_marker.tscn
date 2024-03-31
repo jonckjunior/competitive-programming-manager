@@ -1,0 +1,53 @@
+[gd_scene load_steps=12 format=3 uid="uid://bi6a3o5yfcb5l"]
+
+[ext_resource type="Texture2D" uid="uid://bidx6txhepcdb" path="res://Assets/standing_problem_marker/standing_problem_marker1.png" id="1_pryfm"]
+[ext_resource type="Texture2D" uid="uid://ckupkeeuoxbg2" path="res://Assets/standing_problem_marker/standing_problem_marker2.png" id="2_cc43b"]
+[ext_resource type="Texture2D" uid="uid://nt4o6mngp56i" path="res://Assets/standing_problem_marker/standing_problem_marker3.png" id="3_wjtrs"]
+[ext_resource type="Texture2D" uid="uid://bp2mcflq3n8lc" path="res://Assets/standing_problem_marker/standing_problem_marker4.png" id="4_4jnk6"]
+[ext_resource type="Texture2D" uid="uid://dg6uag3pcllbb" path="res://Assets/standing_problem_marker/standing_problem_marker5.png" id="5_t0b76"]
+[ext_resource type="Texture2D" uid="uid://dp78b1aph8age" path="res://Assets/standing_problem_marker/standing_problem_marker6.png" id="6_sdyjb"]
+[ext_resource type="Texture2D" uid="uid://4jvguafk32so" path="res://Assets/standing_problem_marker/standing_problem_marker7.png" id="7_1objw"]
+[ext_resource type="Texture2D" uid="uid://cjtgdrfhvr1du" path="res://Assets/standing_problem_marker/standing_problem_marker8.png" id="8_y58ae"]
+[ext_resource type="Texture2D" uid="uid://g21f8ttbt7qn" path="res://Assets/standing_problem_marker/standing_problem_marker9.png" id="9_167fv"]
+[ext_resource type="Texture2D" uid="uid://cotvj2vxwdj4b" path="res://Assets/standing_problem_marker/standing_problem_marker10.png" id="10_i5vl5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8e63c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_pryfm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_cc43b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wjtrs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4jnk6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_t0b76")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_sdyjb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_1objw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_y58ae")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_167fv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_i5vl5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ProblemMarker" type="AnimatedSprite2D" groups=["updateUI"]]
+sprite_frames = SubResource("SpriteFrames_8e63c")

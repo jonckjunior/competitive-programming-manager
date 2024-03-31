@@ -1,0 +1,271 @@
+[gd_scene load_steps=44 format=3 uid="uid://bjawoegnibdj8"]
+
+[ext_resource type="Script" path="res://Scripts/ProblemScript.gd" id="1_m1vq3"]
+[ext_resource type="Texture2D" uid="uid://bom30moa6ymtp" path="res://Assets/problem_panel/problem_panel1.png" id="3_7bkfu"]
+[ext_resource type="Texture2D" uid="uid://cmoy5vktyi3px" path="res://Assets/problem_panel/problem_panel2.png" id="4_pxhd1"]
+[ext_resource type="Texture2D" uid="uid://dpq6rt6yx4pyg" path="res://Assets/problem_panel_loading_bar/problem_panel_loading_bar1.png" id="5_0sdt4"]
+[ext_resource type="Texture2D" uid="uid://bxkcbw1ak67p4" path="res://Assets/problem_panel/problem_panel3.png" id="5_u0c66"]
+[ext_resource type="Texture2D" uid="uid://okfrt6ee7xsn" path="res://Assets/problem_panel_loading_bar/player_panel_loading_bar_full1.png" id="6_l4p6u"]
+[ext_resource type="Texture2D" uid="uid://d3ko7kqc3yi4h" path="res://Assets/problem_panel/problem_panel4.png" id="6_pbdd3"]
+[ext_resource type="Texture2D" uid="uid://tp1cydhnh5co" path="res://Assets/problem_panel_loading_bar/problem_panel_loading_bar2.png" id="7_jbeas"]
+[ext_resource type="Texture2D" uid="uid://bqdv6owg5yga3" path="res://Assets/problem_panel/problem_panel5.png" id="7_qd4cm"]
+[ext_resource type="Texture2D" uid="uid://bcm71lbuvh0xn" path="res://Assets/problem_panel_loading_bar/read_problem_panel1.png" id="7_utwfy"]
+[ext_resource type="Texture2D" uid="uid://dn7tbff8clct7" path="res://Assets/problem_panel/problem_panel6.png" id="8_g1155"]
+[ext_resource type="Texture2D" uid="uid://hwcyhwe3vm4w" path="res://Assets/problem_panel_loading_bar/player_panel_loading_bar_full2.png" id="8_ua5xw"]
+[ext_resource type="Texture2D" uid="uid://0jxgoqegu6uy" path="res://Assets/problem_panel/problem_panel7.png" id="9_j4x6h"]
+[ext_resource type="Texture2D" uid="uid://ctlnvshy7knay" path="res://Assets/problem_panel_loading_bar/problem_panel_loading_bar3.png" id="9_ut80p"]
+[ext_resource type="Script" path="res://Scripts/WorkingPanel.gd" id="10_g1qll"]
+[ext_resource type="Texture2D" uid="uid://x0g0cab733pd" path="res://Assets/problem_panel_loading_bar/solve_problem_panel1.png" id="10_i1cb0"]
+[ext_resource type="Texture2D" uid="uid://braerdt3tjf4i" path="res://Assets/problem_panel_loading_bar/player_panel_loading_bar_full3.png" id="10_jm5pa"]
+[ext_resource type="Texture2D" uid="uid://c7umxmqoywno0" path="res://Assets/problem_panel/problem_panel8.png" id="10_riadp"]
+[ext_resource type="Texture2D" uid="uid://tkygviq1evjc" path="res://Assets/problem_panel/problem_panel9.png" id="11_88np4"]
+[ext_resource type="Texture2D" uid="uid://dugbwopojfq3k" path="res://Assets/problem_panel/problem_panel10.png" id="12_8osow"]
+[ext_resource type="Texture2D" uid="uid://bpkndx47w33k1" path="res://Assets/problem_panel/problem_panel11.png" id="13_hshee"]
+[ext_resource type="Theme" uid="uid://vm1vygkyrv53" path="res://Assets/button_theme.tres" id="14_s2s83"]
+[ext_resource type="Texture2D" uid="uid://curnf30rtpro4" path="res://Assets/problem_panel_loading_bar/read_problem_panel2.png" id="17_q1dnl"]
+[ext_resource type="Texture2D" uid="uid://bgxsqkpkt0787" path="res://Assets/problem_panel_loading_bar/read_problem_panel3.png" id="18_y6old"]
+[ext_resource type="PackedScene" uid="uid://hs1kvmyflv2y" path="res://Scenes/letter_r.tscn" id="19_8a5r5"]
+[ext_resource type="PackedScene" uid="uid://cd4w5y4vorvm5" path="res://Scenes/letter_e.tscn" id="20_787nu"]
+[ext_resource type="PackedScene" uid="uid://btbcx3u0w13x8" path="res://Scenes/letter_a.tscn" id="21_5ffyo"]
+[ext_resource type="Texture2D" uid="uid://bb2sij7b6rlfd" path="res://Assets/problem_panel_loading_bar/solve_problem_panel2.png" id="22_6je8d"]
+[ext_resource type="PackedScene" uid="uid://i8qkywi3p55x" path="res://Scenes/letter_d.tscn" id="22_bf7ul"]
+[ext_resource type="Texture2D" uid="uid://d2d3xlqks232x" path="res://Assets/problem_panel_loading_bar/solve_problem_panel3.png" id="23_mywg8"]
+[ext_resource type="Texture2D" uid="uid://ctoipk8dwd4mr" path="res://Assets/problem_panel_loading_bar/code_problem_panel1.png" id="26_1oodt"]
+[ext_resource type="Texture2D" uid="uid://opq8506mids5" path="res://Assets/problem_panel_loading_bar/code_problem_panel2.png" id="27_gtohe"]
+[ext_resource type="PackedScene" uid="uid://cu8cujc07n567" path="res://Scenes/letter_s.tscn" id="28_4vsvg"]
+[ext_resource type="Texture2D" uid="uid://bnbmvbleq1cts" path="res://Assets/problem_panel_loading_bar/code_problem_panel3.png" id="28_6cd15"]
+[ext_resource type="PackedScene" uid="uid://cfgbya568r5d1" path="res://Scenes/letter_o.tscn" id="29_8vy4i"]
+[ext_resource type="PackedScene" uid="uid://dvee7tb5apy54" path="res://Scenes/letter_l.tscn" id="30_i6vud"]
+[ext_resource type="PackedScene" uid="uid://ckovmw553ogoc" path="res://Scenes/letter_v.tscn" id="31_mtjdg"]
+[ext_resource type="PackedScene" uid="uid://cxth06w1hl5yk" path="res://Scenes/letter_c.tscn" id="37_tvpmx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jqrs3"]
+size = Vector2(97, 127)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_07h4v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_7bkfu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_pxhd1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_u0c66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_pbdd3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qd4cm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_g1155")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_j4x6h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_riadp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_88np4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_8osow")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_hshee")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jrona"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_utwfy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_q1dnl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_y6old")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_837ff"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_i1cb0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_6je8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_mywg8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1x45g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_1oodt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_gtohe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_6cd15")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ProblemPanel" type="Node2D" node_paths=PackedStringArray("readProgressBar", "solveProgressBar", "codeProgressBar")]
+texture_filter = 1
+position = Vector2(116, 105)
+script = ExtResource("1_m1vq3")
+readProgressBar = NodePath("ProblemSheet/ReadControl/ReadProgressBar")
+solveProgressBar = NodePath("ProblemSheet/SolveControl/SolveProgressBar")
+codeProgressBar = NodePath("ProblemSheet/CodeControl/CodeProgressBar")
+readTimeBase = 5.0
+solveTimeBase = 5.0
+codeTimeBase = 5.0
+timeToUpdateUI = 1.0
+
+[node name="WorkingPanel" type="StaticBody2D" parent="." groups=["dropable"]]
+position = Vector2(-1, -15)
+script = ExtResource("10_g1qll")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorkingPanel"]
+position = Vector2(0.5, 15.5)
+shape = SubResource("RectangleShape2D_jqrs3")
+debug_color = Color(0.992157, 0, 0.254902, 0.227451)
+
+[node name="ProblemSheet" type="AnimatedSprite2D" parent="." groups=["updateUI"]]
+sprite_frames = SubResource("SpriteFrames_07h4v")
+
+[node name="ReadControl" type="Node2D" parent="ProblemSheet"]
+position = Vector2(-2, 0)
+
+[node name="ReadProgressBar" type="TextureProgressBar" parent="ProblemSheet/ReadControl"]
+offset_left = -43.0
+offset_top = -38.0
+offset_right = 37.0
+offset_bottom = -12.0
+theme = ExtResource("14_s2s83")
+texture_under = ExtResource("5_0sdt4")
+texture_progress = ExtResource("6_l4p6u")
+
+[node name="ReadProblemPanel" type="AnimatedSprite2D" parent="ProblemSheet/ReadControl" groups=["updateUI"]]
+visible = false
+position = Vector2(2, -28)
+sprite_frames = SubResource("SpriteFrames_jrona")
+
+[node name="ReadTextControl" type="Node2D" parent="ProblemSheet/ReadControl"]
+position = Vector2(-2, -1)
+scale = Vector2(0.8, 0.8)
+
+[node name="LetterR" parent="ProblemSheet/ReadControl/ReadTextControl" instance=ExtResource("19_8a5r5")]
+position = Vector2(-18, -28)
+
+[node name="LetterE" parent="ProblemSheet/ReadControl/ReadTextControl" instance=ExtResource("20_787nu")]
+position = Vector2(-4, -28)
+
+[node name="LetterA" parent="ProblemSheet/ReadControl/ReadTextControl" instance=ExtResource("21_5ffyo")]
+position = Vector2(9, -29)
+
+[node name="LetterD" parent="ProblemSheet/ReadControl/ReadTextControl" instance=ExtResource("22_bf7ul")]
+position = Vector2(25, -27)
+
+[node name="SolveControl" type="Control" parent="ProblemSheet"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 7.0
+offset_top = 53.0
+offset_right = 47.0
+offset_bottom = 93.0
+mouse_filter = 2
+
+[node name="SolveProgressBar" type="TextureProgressBar" parent="ProblemSheet/SolveControl"]
+layout_mode = 0
+offset_left = -52.0
+offset_top = -58.0
+offset_right = 28.0
+offset_bottom = -38.0
+texture_under = ExtResource("7_jbeas")
+texture_progress = ExtResource("8_ua5xw")
+
+[node name="SolveProblemPanel" type="AnimatedSprite2D" parent="ProblemSheet/SolveControl" groups=["updateUI"]]
+visible = false
+position = Vector2(-10, -49)
+sprite_frames = SubResource("SpriteFrames_837ff")
+
+[node name="SolveTextControl" type="Node2D" parent="ProblemSheet/SolveControl"]
+position = Vector2(-6, -3)
+scale = Vector2(0.8, 0.8)
+
+[node name="LetterS" parent="ProblemSheet/SolveControl/SolveTextControl" instance=ExtResource("28_4vsvg")]
+position = Vector2(-29, -49)
+
+[node name="LetterO" parent="ProblemSheet/SolveControl/SolveTextControl" instance=ExtResource("29_8vy4i")]
+position = Vector2(-16, -50)
+
+[node name="LetterL" parent="ProblemSheet/SolveControl/SolveTextControl" instance=ExtResource("30_i6vud")]
+position = Vector2(0, -50)
+
+[node name="LetterV" parent="ProblemSheet/SolveControl/SolveTextControl" instance=ExtResource("31_mtjdg")]
+position = Vector2(9, -50)
+
+[node name="LetterE" parent="ProblemSheet/SolveControl/SolveTextControl" instance=ExtResource("20_787nu")]
+position = Vector2(25, -49)
+
+[node name="CodeControl" type="Control" parent="ProblemSheet"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -45.0
+offset_top = 30.0
+offset_right = -5.0
+offset_bottom = 70.0
+mouse_filter = 2
+
+[node name="CodeProgressBar" type="TextureProgressBar" parent="ProblemSheet/CodeControl"]
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 26.0
+texture_under = ExtResource("9_ut80p")
+texture_progress = ExtResource("10_jm5pa")
+
+[node name="CodeProblemPanel" type="AnimatedSprite2D" parent="ProblemSheet/CodeControl" groups=["updateUI"]]
+visible = false
+position = Vector2(41, 10)
+sprite_frames = SubResource("SpriteFrames_1x45g")
+
+[node name="CodeTextControl" type="Node2D" parent="ProblemSheet/CodeControl"]
+position = Vector2(8, 7)
+scale = Vector2(0.8, 0.8)
+
+[node name="LetterC" parent="ProblemSheet/CodeControl/CodeTextControl" instance=ExtResource("37_tvpmx")]
+position = Vector2(23, 10)
+
+[node name="LetterO" parent="ProblemSheet/CodeControl/CodeTextControl" instance=ExtResource("29_8vy4i")]
+position = Vector2(35, 8)
+
+[node name="LetterD" parent="ProblemSheet/CodeControl/CodeTextControl" instance=ExtResource("22_bf7ul")]
+position = Vector2(51, 10)
+
+[node name="LetterE" parent="ProblemSheet/CodeControl/CodeTextControl" instance=ExtResource("20_787nu")]
+position = Vector2(68, 10)

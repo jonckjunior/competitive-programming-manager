@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://cxth06w1hl5yk"]
+
+[ext_resource type="Texture2D" uid="uid://bph6bbu8hnixt" path="res://Assets/letter/problem_letter7.png" id="1_ol771"]
+[ext_resource type="Texture2D" uid="uid://bdoph4pjfe7fx" path="res://Assets/letter/problem_letter8.png" id="2_uvayj"]
+[ext_resource type="Texture2D" uid="uid://b270p7sd6dybm" path="res://Assets/letter/problem_letter9.png" id="3_ogtfy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x06lf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ol771")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_uvayj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ogtfy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="LetterC" type="AnimatedSprite2D" groups=["updateUI"]]
+sprite_frames = SubResource("SpriteFrames_x06lf")

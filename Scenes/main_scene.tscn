@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://2xeetu3x4d5j"]
+
+[ext_resource type="Script" path="res://Scripts/main_scene.gd" id="1_w3ult"]
+[ext_resource type="PackedScene" uid="uid://du8tthd0u6vqu" path="res://Scenes/out_contest_scene.tscn" id="2_a1uq0"]
+[ext_resource type="PackedScene" uid="uid://colfkf7g1me4y" path="res://Scenes/in_contest_scene.tscn" id="3_seq7t"]
+
+[node name="MainScene" type="Node2D"]
+script = ExtResource("1_w3ult")
+
+[node name="OutContestScene" parent="." instance=ExtResource("2_a1uq0")]
+visible = false
+
+[node name="InContestScene" parent="." instance=ExtResource("3_seq7t")]
+visible = false

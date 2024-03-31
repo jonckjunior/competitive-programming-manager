@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdk6usb3bxirw"]
+
+[ext_resource type="Texture2D" uid="uid://wav1vai7n556" path="res://Assets/portrait-with-border10.png" id="1_d7gqp"]
+
+[node name="CompetitorPortrait" type="Node2D"]
+texture_filter = 1
+
+[node name="Portrait-with-border10" type="Sprite2D" parent="."]
+position = Vector2(80, 40)
+texture = ExtResource("1_d7gqp")

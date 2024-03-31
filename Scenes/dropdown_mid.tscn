@@ -1,0 +1,63 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7ghp7bvuaxm6"]
+
+[ext_resource type="Script" path="res://Scripts/dropdown_mid.gd" id="1_8iage"]
+[ext_resource type="PackedScene" uid="uid://bi6a3o5yfcb5l" path="res://Scenes/problem_marker.tscn" id="2_frbdu"]
+
+[node name="MidController" type="Node2D"]
+script = ExtResource("1_8iage")
+teamName = "abcdefghijklmnopqrstu"
+
+[node name="TeamNameContainer" type="Node2D" parent="."]
+position = Vector2(10, 10)
+scale = Vector2(0.8, 0.8)
+
+[node name="ProblemMarkerContainer" type="Node2D" parent="."]
+position = Vector2(160, 84)
+
+[node name="ProblemMarker1" parent="ProblemMarkerContainer" instance=ExtResource("2_frbdu")]
+position = Vector2(140, -74)
+
+[node name="ProblemMarker2" parent="ProblemMarkerContainer" instance=ExtResource("2_frbdu")]
+position = Vector2(160, -74)
+
+[node name="ProblemMarker3" parent="ProblemMarkerContainer" instance=ExtResource("2_frbdu")]
+position = Vector2(180, -74)
+
+[node name="ProblemMarker4" parent="ProblemMarkerContainer" instance=ExtResource("2_frbdu")]
+position = Vector2(200, -74)
+
+[node name="ProblemMarker5" parent="ProblemMarkerContainer" instance=ExtResource("2_frbdu")]
+position = Vector2(220, -74)
+
+[node name="ProblemMarker6" parent="ProblemMarkerContainer" instance=ExtResource("2_frbdu")]
+position = Vector2(240, -74)
+
+[node name="ProblemMarker7" parent="ProblemMarkerContainer" instance=ExtResource("2_frbdu")]
+position = Vector2(260, -74)
+
+[node name="ProblemMarker8" parent="ProblemMarkerContainer" instance=ExtResource("2_frbdu")]
+position = Vector2(280, -74)
+
+[node name="ProblemMarker9" parent="ProblemMarkerContainer" instance=ExtResource("2_frbdu")]
+position = Vector2(300, -74)
+
+[node name="ProblemMarker10" parent="ProblemMarkerContainer" instance=ExtResource("2_frbdu")]
+position = Vector2(320, -74)
+
+[node name="ProblemMarker11" parent="ProblemMarkerContainer" instance=ExtResource("2_frbdu")]
+position = Vector2(340, -74)
+
+[node name="ProblemMarker12" parent="ProblemMarkerContainer" instance=ExtResource("2_frbdu")]
+position = Vector2(360, -74)
+
+[node name="ProblemMarker13" parent="ProblemMarkerContainer" instance=ExtResource("2_frbdu")]
+position = Vector2(380, -74)
+
+[node name="ProblemMarker14" parent="ProblemMarkerContainer" instance=ExtResource("2_frbdu")]
+position = Vector2(400, -74)
+
+[node name="ProblemMarker15" parent="ProblemMarkerContainer" instance=ExtResource("2_frbdu")]
+position = Vector2(420, -74)
+
+[node name="ProblemMarker16" parent="ProblemMarkerContainer" instance=ExtResource("2_frbdu")]
+position = Vector2(440, -74)
