@@ -18,6 +18,7 @@ var offsetVector: Vector2 = Vector2(0, 0)
 var timeSinceLastUpdated = 0.0
 
 var teams : Array[Manager]
+var teamToProblemSolved: Dictionary
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -35,17 +36,22 @@ func _process(delta):
 
 		timeSinceLastUpdated = 0
 	
-func render_standings():
+func render_standings(userTeamName: String):
 	#var topDrop = topDropdown.instantiate()
 	#topDrop.position += offsetVector
 	#$Control.add_child(topDrop)
+	for child in $Control.get_children():
+		$Control.remove_child(child)
+
 	for i in range(teams.size()):
 		var team : Manager = teams[i]
 		var teamLine = midDropdown.instantiate()
 		$Control.add_child(teamLine)
 		teamLine.teamName = team.teamName
+		teamLine.problemsSolved = teamToProblemSolved[team.teamName]
 		teamLine.position.y += 30 * i
 		teamLine.position += offsetVector
+		teamLine.render_team_name(team.teamName == userTeamName)
 	
 	#var bottomDrop = bottomDropdown.instantiate()
 	#bottomDrop.position.y += 40 * (teams.size() + 1)

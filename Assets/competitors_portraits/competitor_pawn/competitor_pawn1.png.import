@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dle4v6hjho6ak"
-path="res://.godot/imported/fat_guy_portrait4.png-7eb5b0ebacd5f837c934758e8f8d7fc4.ctex"
+uid="uid://cp3neagqoqeki"
+path="res://.godot/imported/competitor_pawn1.png-8c76cf34ded2db58cab404b76215373d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/fat_guy_portrait/fat_guy_portrait4.png"
-dest_files=["res://.godot/imported/fat_guy_portrait4.png-7eb5b0ebacd5f837c934758e8f8d7fc4.ctex"]
+source_file="res://Assets/competitors_portraits/competitor_pawn/competitor_pawn1.png"
+dest_files=["res://.godot/imported/competitor_pawn1.png-8c76cf34ded2db58cab404b76215373d.ctex"]
 
 [params]
 

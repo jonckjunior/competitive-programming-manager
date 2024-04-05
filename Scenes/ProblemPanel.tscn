@@ -1,7 +1,8 @@
-[gd_scene load_steps=44 format=3 uid="uid://bjawoegnibdj8"]
+[gd_scene load_steps=52 format=3 uid="uid://bjawoegnibdj8"]
 
 [ext_resource type="Script" path="res://Scripts/ProblemScript.gd" id="1_m1vq3"]
 [ext_resource type="Texture2D" uid="uid://bom30moa6ymtp" path="res://Assets/problem_panel/problem_panel1.png" id="3_7bkfu"]
+[ext_resource type="Shader" path="res://Scenes/in_contest_scene.gdshader" id="3_64qcb"]
 [ext_resource type="Texture2D" uid="uid://cmoy5vktyi3px" path="res://Assets/problem_panel/problem_panel2.png" id="4_pxhd1"]
 [ext_resource type="Texture2D" uid="uid://dpq6rt6yx4pyg" path="res://Assets/problem_panel_loading_bar/problem_panel_loading_bar1.png" id="5_0sdt4"]
 [ext_resource type="Texture2D" uid="uid://bxkcbw1ak67p4" path="res://Assets/problem_panel/problem_panel3.png" id="5_u0c66"]
@@ -38,9 +39,22 @@
 [ext_resource type="PackedScene" uid="uid://dvee7tb5apy54" path="res://Scenes/letter_l.tscn" id="30_i6vud"]
 [ext_resource type="PackedScene" uid="uid://ckovmw553ogoc" path="res://Scenes/letter_v.tscn" id="31_mtjdg"]
 [ext_resource type="PackedScene" uid="uid://cxth06w1hl5yk" path="res://Scenes/letter_c.tscn" id="37_tvpmx"]
+[ext_resource type="PackedScene" uid="uid://c61x66l35wor2" path="res://Classes/animated_problem_tag.tscn" id="39_os8m4"]
+[ext_resource type="Texture2D" uid="uid://7wpd6vc4xobr" path="res://Assets/problem_panel_scratch/problem_panel_scratch1.png" id="40_nryar"]
+[ext_resource type="Texture2D" uid="uid://dojgueunaow7l" path="res://Assets/problem_panel_scratch/problem_panel_scratch2.png" id="41_nujlu"]
+[ext_resource type="Texture2D" uid="uid://44d374j3wkbi" path="res://Assets/problem_panel_scratch/problem_panel_scratch3.png" id="42_23m8v"]
+[ext_resource type="Texture2D" uid="uid://di88n605iimog" path="res://Assets/problem_panel_scratch/problem_panel_scratch4.png" id="43_jpu3u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jqrs3"]
 size = Vector2(97, 127)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pilmc"]
+shader = ExtResource("3_64qcb")
+shader_parameter/color = Color(0.392157, 0.698039, 0.203922, 1)
+shader_parameter/width = 3.0
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = true
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_07h4v"]
 animations = [{
@@ -134,6 +148,26 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_3o8o3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("40_nryar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_nujlu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_23m8v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_jpu3u")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="ProblemPanel" type="Node2D" node_paths=PackedStringArray("readProgressBar", "solveProgressBar", "codeProgressBar")]
 texture_filter = 1
 position = Vector2(116, 105)
@@ -141,9 +175,6 @@ script = ExtResource("1_m1vq3")
 readProgressBar = NodePath("ProblemSheet/ReadControl/ReadProgressBar")
 solveProgressBar = NodePath("ProblemSheet/SolveControl/SolveProgressBar")
 codeProgressBar = NodePath("ProblemSheet/CodeControl/CodeProgressBar")
-readTimeBase = 5.0
-solveTimeBase = 5.0
-codeTimeBase = 5.0
 timeToUpdateUI = 1.0
 
 [node name="WorkingPanel" type="StaticBody2D" parent="." groups=["dropable"]]
@@ -156,12 +187,14 @@ shape = SubResource("RectangleShape2D_jqrs3")
 debug_color = Color(0.992157, 0, 0.254902, 0.227451)
 
 [node name="ProblemSheet" type="AnimatedSprite2D" parent="." groups=["updateUI"]]
+material = SubResource("ShaderMaterial_pilmc")
 sprite_frames = SubResource("SpriteFrames_07h4v")
 
 [node name="ReadControl" type="Node2D" parent="ProblemSheet"]
 position = Vector2(-2, 0)
 
 [node name="ReadProgressBar" type="TextureProgressBar" parent="ProblemSheet/ReadControl"]
+modulate = Color(0.988235, 1, 1, 1)
 offset_left = -43.0
 offset_top = -38.0
 offset_right = 37.0
@@ -176,8 +209,8 @@ position = Vector2(2, -28)
 sprite_frames = SubResource("SpriteFrames_jrona")
 
 [node name="ReadTextControl" type="Node2D" parent="ProblemSheet/ReadControl"]
-position = Vector2(-2, -1)
-scale = Vector2(0.8, 0.8)
+position = Vector2(2, -9)
+scale = Vector2(0.5, 0.5)
 
 [node name="LetterR" parent="ProblemSheet/ReadControl/ReadTextControl" instance=ExtResource("19_8a5r5")]
 position = Vector2(-18, -28)
@@ -215,8 +248,8 @@ position = Vector2(-10, -49)
 sprite_frames = SubResource("SpriteFrames_837ff")
 
 [node name="SolveTextControl" type="Node2D" parent="ProblemSheet/SolveControl"]
-position = Vector2(-6, -3)
-scale = Vector2(0.8, 0.8)
+position = Vector2(-4, -18)
+scale = Vector2(0.5, 0.5)
 
 [node name="LetterS" parent="ProblemSheet/SolveControl/SolveTextControl" instance=ExtResource("28_4vsvg")]
 position = Vector2(-29, -49)
@@ -255,8 +288,8 @@ position = Vector2(41, 10)
 sprite_frames = SubResource("SpriteFrames_1x45g")
 
 [node name="CodeTextControl" type="Node2D" parent="ProblemSheet/CodeControl"]
-position = Vector2(8, 7)
-scale = Vector2(0.8, 0.8)
+position = Vector2(23, 11)
+scale = Vector2(0.5, 0.5)
 
 [node name="LetterC" parent="ProblemSheet/CodeControl/CodeTextControl" instance=ExtResource("37_tvpmx")]
 position = Vector2(23, 10)
@@ -269,3 +302,26 @@ position = Vector2(51, 10)
 
 [node name="LetterE" parent="ProblemSheet/CodeControl/CodeTextControl" instance=ExtResource("20_787nu")]
 position = Vector2(68, 10)
+
+[node name="TagControl" type="Node2D" parent="ProblemSheet"]
+position = Vector2(-17, -1)
+
+[node name="AnimatedProblemTag1" parent="ProblemSheet/TagControl" groups=["updateUI"] instance=ExtResource("39_os8m4")]
+visible = false
+position = Vector2(54, -52)
+
+[node name="AnimatedProblemTag2" parent="ProblemSheet/TagControl" groups=["updateUI"] instance=ExtResource("39_os8m4")]
+visible = false
+position = Vector2(26, -52)
+
+[node name="AnimatedProblemTag3" parent="ProblemSheet/TagControl" groups=["updateUI"] instance=ExtResource("39_os8m4")]
+visible = false
+position = Vector2(-2, -52)
+
+[node name="ProblemPanelScratch" type="AnimatedSprite2D" parent="." groups=["updateUI"]]
+visible = false
+modulate = Color(0.0693885, 0.577138, 0.0776596, 1)
+sprite_frames = SubResource("SpriteFrames_3o8o3")
+
+[node name="AcBalloonMarkerPosition" type="Marker2D" parent="."]
+position = Vector2(1, 43)

@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://c61x66l35wor2"]
+
+[ext_resource type="Texture2D" uid="uid://6paic1g10423" path="res://Assets/problem_tag/problem_tag1.png" id="1_4km6t"]
+[ext_resource type="Texture2D" uid="uid://wwer8jpplws7" path="res://Assets/problem_tag/problem_tag2.png" id="2_4h063"]
+[ext_resource type="Texture2D" uid="uid://c3fygga4opwm6" path="res://Assets/problem_tag/problem_tag3.png" id="3_682w1"]
+[ext_resource type="Texture2D" uid="uid://bcgywpcfxr2rt" path="res://Assets/problem_tag/problem_tag4.png" id="4_2amnc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wqj0j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_4km6t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_4h063")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_682w1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2amnc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="AnimatedProblemTag" type="AnimatedSprite2D"]
+scale = Vector2(0.7, 0.7)
+sprite_frames = SubResource("SpriteFrames_wqj0j")

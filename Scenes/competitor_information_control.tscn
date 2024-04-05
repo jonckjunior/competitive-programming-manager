@@ -1,0 +1,98 @@
+[gd_scene load_steps=13 format=3 uid="uid://c7gag2fdjhxfw"]
+
+[ext_resource type="Script" path="res://Scripts/competitor_information_control.gd" id="1_2ey42"]
+[ext_resource type="Texture2D" uid="uid://cskobvnj6yh47" path="res://Assets/competitors_portraits/skeleton_portrait/skeleton_portrait1.png" id="1_11tyt"]
+[ext_resource type="Texture2D" uid="uid://dp5jbbnygawt" path="res://Assets/competitors_portraits/skeleton_portrait/skeleton_portrait2.png" id="2_vudtv"]
+[ext_resource type="Texture2D" uid="uid://c417r3rdusikc" path="res://Assets/competitors_portraits/skeleton_portrait/skeleton_portrait3.png" id="3_0km3w"]
+[ext_resource type="Texture2D" uid="uid://dyc2i7xftwjyg" path="res://Assets/competitors_portraits/skeleton_portrait/skeleton_portrait4.png" id="4_g3ls8"]
+[ext_resource type="PackedScene" uid="uid://cd4w5y4vorvm5" path="res://Scenes/letter_e.tscn" id="5_imw1b"]
+[ext_resource type="PackedScene" uid="uid://dvee7tb5apy54" path="res://Scenes/letter_l.tscn" id="6_0kqqi"]
+[ext_resource type="PackedScene" uid="uid://cfgbya568r5d1" path="res://Scenes/letter_o.tscn" id="7_ex1dv"]
+[ext_resource type="PackedScene" uid="uid://c61x66l35wor2" path="res://Classes/animated_problem_tag.tscn" id="8_qtbgv"]
+[ext_resource type="Shader" path="res://Scenes/in_contest_scene.gdshader" id="10_m5imx"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h7m1p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_11tyt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_vudtv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_0km3w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_g3ls8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_28tsn"]
+shader = ExtResource("10_m5imx")
+shader_parameter/color = Color(1, 0.964706, 0.945098, 1)
+shader_parameter/width = 1.0
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = true
+
+[node name="CompetitorInformationControl" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_2ey42")
+
+[node name="Skeleton" type="AnimatedSprite2D" parent="." groups=["updateUI"]]
+position = Vector2(-86, 1)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_h7m1p")
+
+[node name="EloController" type="Node2D" parent="."]
+position = Vector2(-98, -35)
+scale = Vector2(0.7, 0.7)
+
+[node name="LetterE" parent="EloController" instance=ExtResource("5_imw1b")]
+position = Vector2(-19, -16)
+
+[node name="LetterL" parent="EloController" instance=ExtResource("6_0kqqi")]
+position = Vector2(-4, -16)
+
+[node name="LetterO" parent="EloController" instance=ExtResource("7_ex1dv")]
+position = Vector2(11, -17)
+
+[node name="EloNumberController" type="Node2D" parent="EloController"]
+position = Vector2(30, -17.1429)
+
+[node name="CompetencesController" type="Node2D" parent="."]
+position = Vector2(-4, -4)
+scale = Vector2(1.2, 1.2)
+
+[node name="AnimatedProblemTagController" type="Node2D" parent="CompetencesController"]
+
+[node name="AnimatedProblemTag" parent="CompetencesController/AnimatedProblemTagController" instance=ExtResource("8_qtbgv")]
+material = SubResource("ShaderMaterial_28tsn")
+position = Vector2(-16.9231, -20)
+
+[node name="TagLevelController" type="Node2D" parent="CompetencesController/AnimatedProblemTagController/AnimatedProblemTag"]
+scale = Vector2(1, 1)
+
+[node name="TagTextController" type="Node2D" parent="CompetencesController/AnimatedProblemTagController/AnimatedProblemTag"]
+position = Vector2(28.9378, -1.19043)
+scale = Vector2(1, 1)
+
+[node name="AnimatedProblemTag2" parent="CompetencesController/AnimatedProblemTagController" instance=ExtResource("8_qtbgv")]
+position = Vector2(-17.5, 7.5)
+
+[node name="TagLevelController" type="Node2D" parent="CompetencesController/AnimatedProblemTagController/AnimatedProblemTag2"]
+
+[node name="TagTextController" type="Node2D" parent="CompetencesController/AnimatedProblemTagController/AnimatedProblemTag2"]
+position = Vector2(28.9378, -1.19048)
+
+[node name="AnimatedProblemTag3" parent="CompetencesController/AnimatedProblemTagController" instance=ExtResource("8_qtbgv")]
+position = Vector2(-18.3333, 34.1667)
+
+[node name="TagLevelController" type="Node2D" parent="CompetencesController/AnimatedProblemTagController/AnimatedProblemTag3"]
+
+[node name="TagTextController" type="Node2D" parent="CompetencesController/AnimatedProblemTagController/AnimatedProblemTag3"]
+position = Vector2(28.9378, -1.19048)

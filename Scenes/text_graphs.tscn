@@ -1,0 +1,27 @@
+[gd_scene load_steps=7 format=3 uid="uid://c03pvxodg12x"]
+
+[ext_resource type="PackedScene" uid="uid://cwpyf4r0hm22t" path="res://Scenes/letter_g.tscn" id="1_kutkk"]
+[ext_resource type="PackedScene" uid="uid://hs1kvmyflv2y" path="res://Scenes/letter_r.tscn" id="2_oboi7"]
+[ext_resource type="PackedScene" uid="uid://btbcx3u0w13x8" path="res://Scenes/letter_a.tscn" id="3_iugo1"]
+[ext_resource type="PackedScene" uid="uid://b2kqq0m8sfdvs" path="res://Scenes/letter_p.tscn" id="4_3u8f3"]
+[ext_resource type="PackedScene" uid="uid://dpqxb2yva4ufa" path="res://Scenes/letter_h.tscn" id="5_2vi75"]
+[ext_resource type="PackedScene" uid="uid://cu8cujc07n567" path="res://Scenes/letter_s.tscn" id="6_yceu8"]
+
+[node name="TextGraphs" type="Node2D"]
+
+[node name="LetterG" parent="." instance=ExtResource("1_kutkk")]
+
+[node name="LetterR" parent="." instance=ExtResource("2_oboi7")]
+position = Vector2(13, 0)
+
+[node name="LetterA" parent="." instance=ExtResource("3_iugo1")]
+position = Vector2(28, 0)
+
+[node name="LetterP" parent="." instance=ExtResource("4_3u8f3")]
+position = Vector2(45, 1)
+
+[node name="LetterH" parent="." instance=ExtResource("5_2vi75")]
+position = Vector2(60, 2)
+
+[node name="LetterS" parent="." instance=ExtResource("6_yceu8")]
+position = Vector2(72, 3)

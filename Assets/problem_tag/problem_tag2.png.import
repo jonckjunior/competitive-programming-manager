@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cp3neagqoqeki"
-path="res://.godot/imported/competitor_pawn1.png-96157f76671a2601cd47dc8d2b2ac241.ctex"
+uid="uid://wwer8jpplws7"
+path="res://.godot/imported/problem_tag2.png-8f4370ddcb3f3a3be09def7291698db2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/competitor_pawn/competitor_pawn1.png"
-dest_files=["res://.godot/imported/competitor_pawn1.png-96157f76671a2601cd47dc8d2b2ac241.ctex"]
+source_file="res://Assets/problem_tag/problem_tag2.png"
+dest_files=["res://.godot/imported/problem_tag2.png-8f4370ddcb3f3a3be09def7291698db2.ctex"]
 
 [params]
 

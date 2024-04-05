@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://l7jhxcnt5stu"]
+
+[ext_resource type="PackedScene" uid="uid://i8qkywi3p55x" path="res://Scenes/letter_d.tscn" id="1_hkjwv"]
+[ext_resource type="PackedScene" uid="uid://btbcx3u0w13x8" path="res://Scenes/letter_a.tscn" id="2_wvddf"]
+[ext_resource type="PackedScene" uid="uid://cr34hcm0a5odh" path="res://Scenes/letter_t.tscn" id="3_3s5ul"]
+
+[node name="TextData" type="Node2D"]
+
+[node name="LetterD" parent="." instance=ExtResource("1_hkjwv")]
+
+[node name="LetterA" parent="." instance=ExtResource("2_wvddf")]
+position = Vector2(17, -1)
+
+[node name="LetterT" parent="." instance=ExtResource("3_3s5ul")]
+position = Vector2(32, 1)
+
+[node name="LetterA2" parent="." instance=ExtResource("2_wvddf")]
+position = Vector2(47, -1)

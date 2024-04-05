@@ -5,11 +5,10 @@
 
 [node name="MidController" type="Node2D"]
 script = ExtResource("1_8iage")
-teamName = "abcdefghijklmnopqrstu"
 
 [node name="TeamNameContainer" type="Node2D" parent="."]
 position = Vector2(10, 10)
-scale = Vector2(0.8, 0.8)
+scale = Vector2(0.7, 0.7)
 
 [node name="ProblemMarkerContainer" type="Node2D" parent="."]
 position = Vector2(160, 84)

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d301phnc3jpkq"
-path="res://.godot/imported/fat_guy_portrait1.png-7a45e93a434755b2c43c0f7124dd099b.ctex"
+uid="uid://bdvnra7hfao3o"
+path="res://.godot/imported/fat_guy_portrait2.png-0253ca6faeff8a8ed5ae23ec1c9dc3b8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/fat_guy_portrait/fat_guy_portrait1.png"
-dest_files=["res://.godot/imported/fat_guy_portrait1.png-7a45e93a434755b2c43c0f7124dd099b.ctex"]
+source_file="res://Assets/competitors_portraits/fat_guy_portrait/fat_guy_portrait2.png"
+dest_files=["res://.godot/imported/fat_guy_portrait2.png-0253ca6faeff8a8ed5ae23ec1c9dc3b8.ctex"]
 
 [params]
 

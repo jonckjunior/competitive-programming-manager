@@ -1,21 +1,21 @@
 [gd_scene load_steps=7 format=3 uid="uid://b3oqu5ayoudjc"]
 
-[ext_resource type="Texture2D" uid="uid://cp3neagqoqeki" path="res://Assets/competitor_pawn/competitor_pawn1.png" id="2_piq3f"]
+[ext_resource type="Texture2D" uid="uid://cp3neagqoqeki" path="res://Assets/competitors_portraits/competitor_pawn/competitor_pawn1.png" id="2_qxofi"]
 [ext_resource type="Script" path="res://Scripts/draggable_competitor.gd" id="2_u0uvn"]
-[ext_resource type="Texture2D" uid="uid://cmv45lqg2w3h5" path="res://Assets/competitor_pawn/competitor_pawn2.png" id="3_dka25"]
-[ext_resource type="Texture2D" uid="uid://cdsg6kd0j7pp8" path="res://Assets/competitor_pawn/competitor_pawn3.png" id="4_pbjlr"]
+[ext_resource type="Texture2D" uid="uid://cmv45lqg2w3h5" path="res://Assets/competitors_portraits/competitor_pawn/competitor_pawn2.png" id="3_smnew"]
+[ext_resource type="Texture2D" uid="uid://cdsg6kd0j7pp8" path="res://Assets/competitors_portraits/competitor_pawn/competitor_pawn3.png" id="4_73uof"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_o8nh4"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_piq3f")
+"texture": ExtResource("2_qxofi")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_dka25")
+"texture": ExtResource("3_smnew")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_pbjlr")
+"texture": ExtResource("4_73uof")
 }],
 "loop": true,
 "name": &"default",

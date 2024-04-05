@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cdsg6kd0j7pp8"
-path="res://.godot/imported/competitor_pawn3.png-75dbd241534e99fdc262a3c5fb60cd61.ctex"
+uid="uid://b7jbfkcwbh8wk"
+path="res://.godot/imported/balloons_ac3.png-c9dd9109aa5e6ff375e4ca731cde7554.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/competitor_pawn/competitor_pawn3.png"
-dest_files=["res://.godot/imported/competitor_pawn3.png-75dbd241534e99fdc262a3c5fb60cd61.ctex"]
+source_file="res://Assets/balloon/balloons_ac3.png"
+dest_files=["res://.godot/imported/balloons_ac3.png-c9dd9109aa5e6ff375e4ca731cde7554.ctex"]
 
 [params]
 

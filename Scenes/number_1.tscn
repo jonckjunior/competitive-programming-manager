@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://reuf6o3a5nxs"]
+
+[ext_resource type="Texture2D" uid="uid://gfaa1cs3i8m1" path="res://Assets/numeros/numeros1.png" id="1_psyrj"]
+[ext_resource type="Texture2D" uid="uid://drrfwhdvqbj6w" path="res://Assets/numeros/numeros2.png" id="2_7ocmx"]
+[ext_resource type="Texture2D" uid="uid://68nva77bcj6b" path="res://Assets/numeros/numeros3.png" id="3_rhfh2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1brey"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_psyrj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_7ocmx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_rhfh2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Number1" type="AnimatedSprite2D" groups=["updateUI"]]
+sprite_frames = SubResource("SpriteFrames_1brey")

@@ -1,0 +1,48 @@
+[gd_scene load_steps=10 format=3 uid="uid://u3xqcwuwmmka"]
+
+[ext_resource type="Texture2D" uid="uid://b03yr53tf5kld" path="res://Assets/balloon/balloons_ac1.png" id="1_kcfhe"]
+[ext_resource type="Texture2D" uid="uid://hkonw822bq3w" path="res://Assets/balloon/balloons_ac2.png" id="2_4th7k"]
+[ext_resource type="Texture2D" uid="uid://b7jbfkcwbh8wk" path="res://Assets/balloon/balloons_ac3.png" id="3_w30pk"]
+[ext_resource type="Texture2D" uid="uid://cuaix6f0ufqd3" path="res://Assets/balloon/balloons_ac4.png" id="4_yybdl"]
+[ext_resource type="Texture2D" uid="uid://71rbtw41ap8t" path="res://Assets/balloon/balloons_ac5.png" id="5_nla8t"]
+[ext_resource type="Texture2D" uid="uid://c6qkiirgf4hgf" path="res://Assets/balloon/balloons_ac6.png" id="6_qb1um"]
+[ext_resource type="Texture2D" uid="uid://3ixg16g52rw0" path="res://Assets/balloon/balloons_ac7.png" id="7_b428k"]
+[ext_resource type="Texture2D" uid="uid://dfdbjkqm15cm1" path="res://Assets/balloon/balloons_ac8.png" id="8_pgyt5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ov1c6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_kcfhe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_4th7k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_w30pk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_yybdl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_nla8t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qb1um")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_b428k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_pgyt5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="AcBalloon" type="AnimatedSprite2D" groups=["updateUI"]]
+position = Vector2(0, 43)
+sprite_frames = SubResource("SpriteFrames_ov1c6")
+frame = 1
+frame_progress = 0.674347
